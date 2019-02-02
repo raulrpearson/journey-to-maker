@@ -1,0 +1,28 @@
+import Text from '../components/Text';
+import Paragraph from '../components/Paragraph';
+import '../styles/default.css';
+
+import { graphql } from 'gatsby';
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`;
+
+# <Text text={props.data.site.siteMetadata.title} />
+
+<Paragraph text={props.data.site.siteMetadata.description} />
+
+## Sales
+
+- [Sales > marketing](https://blog.louisnicholls.com/advice/sales-marketing/)
+
+## Community
+
+- Join communities and projects like [Makerlog](https://getmakerlog.com),
+  [WIP](https://wip.chat/), [Shipstreams](https://shipstreams.com/)...
